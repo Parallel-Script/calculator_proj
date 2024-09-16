@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+
+.container {
+  max-width: 400px;
+}
+
+button {
+  margin: 5px;
+}
