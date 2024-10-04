@@ -22,3 +22,8 @@ input.form-control {
   height: 75px;
   width: 100%;
 }
+
+button {
+  margin: 5px; /* This already exists, but we can adjust this as needed */
+  width: 100%;  /* Ensure buttons fill their column */
+}
