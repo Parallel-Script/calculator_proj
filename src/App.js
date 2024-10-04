@@ -42,7 +42,7 @@ function App() {
             value={display}
             readOnly
           />
-          <div className="row mt-4">
+          <div className="row mt-3">
             {/* Row 1 */}
             <button onClick={clearDisplay} className="btn btn-danger col-3">AC</button>
             <button onClick={() => handleClick('%')} className="btn btn-secondary col-3">%</button>
