@@ -1,21 +1,24 @@
-.container {
-  max-width: 400px;
-  margin: 0 auto; /* Center the calculator on the page */
+.button-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure buttons wrap into the next row */
+  margin-bottom: 10px; /* Add some space between rows */
 }
 
-button {
-  margin: 5px;
-  height: 75px;  /* Increased height for a better fit */
-  width: 75px;   /* Set a consistent width for all buttons */
-  font-size: 1.5rem;  /* Larger font for readability */
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Center the button content */
+button.col-3 {
+  flex: 0 0 calc(25% - 10px); /* Each button takes 25% width, accounting for margin */
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto; /* Center the calculator */
 }
 
 input.form-control {
-  font-size: 2rem; /* Larger display text */
-  text-align: right; /* Align text to the right for better UX */
-  margin-bottom: 15px; /* Add space below the display */
-  height: 75px;  /* Adjust height to match buttons */
+  font-size: 2rem;
+  text-align: right;
+  margin-bottom: 15px;
+  height: 75px;
+  width: 100%;
 }

@@ -42,35 +42,37 @@ function App() {
             value={display}
             readOnly
           />
-          <div className="row mt-3">
-            {/* Row 1 */}
-            <button onClick={clearDisplay} className="btn btn-danger col-3">AC</button>
-            <button onClick={() => handleClick('%')} className="btn btn-secondary col-3">%</button>
-            <button onClick={() => handleClick('/')} className="btn btn-secondary col-3">/</button>
-            <button onClick={() => handleClick('*')} className="btn btn-secondary col-3">*</button>
-            
-            {/* Row 2 */}
-            <button onClick={() => handleClick('7')} className="btn btn-light col-3">7</button>
-            <button onClick={() => handleClick('8')} className="btn btn-light col-3">8</button>
-            <button onClick={() => handleClick('9')} className="btn btn-light col-3">9</button>
-            <button onClick={() => handleClick('-')} className="btn btn-secondary col-3">-</button>
+          <div className="button-row mt-3">
+  <button onClick={clearDisplay} className="btn btn-danger col-3">AC</button>
+  <button onClick={() => handleClick('%')} className="btn btn-secondary col-3">%</button>
+  <button onClick={() => handleClick('/')} className="btn btn-secondary col-3">/</button>
+  <button onClick={() => handleClick('*')} className="btn btn-secondary col-3">*</button>
+</div>
 
-            {/* Row 3 */}
-            <button onClick={() => handleClick('4')} className="btn btn-light col-3">4</button>
-            <button onClick={() => handleClick('5')} className="btn btn-light col-3">5</button>
-            <button onClick={() => handleClick('6')} className="btn btn-light col-3">6</button>
-            <button onClick={() => handleClick('+')} className="btn btn-secondary col-3">+</button>
 
-            {/* Row 4 */}
-            <button onClick={() => handleClick('1')} className="btn btn-light col-3">1</button>
-            <button onClick={() => handleClick('2')} className="btn btn-light col-3">2</button>
-            <button onClick={() => handleClick('3')} className="btn btn-light col-3">3</button>
-            <button onClick={handleSquare} className="btn btn-secondary col-3">x²</button>
+{/* Row 2 */}
+<button onClick={() => handleClick('7')} className="btn btn-light col-3">7</button>
+<button onClick={() => handleClick('8')} className="btn btn-light col-3">8</button>
+<button onClick={() => handleClick('9')} className="btn btn-light col-3">9</button>
+<button onClick={() => handleClick('-')} className="btn btn-secondary col-3">-</button>
 
-            {/* Row 5 */}
-            <button onClick={() => handleClick('0')} className="btn btn-light col-6">0</button>
-            <button onClick={() => handleClick('.')} className="btn btn-light col-3">.</button>
-            <button onClick={calculate} className="btn btn-primary col-3">=</button>
+{/* Row 3 */}
+<button onClick={() => handleClick('4')} className="btn btn-light col-3">4</button>
+<button onClick={() => handleClick('5')} className="btn btn-light col-3">5</button>
+<button onClick={() => handleClick('6')} className="btn btn-light col-3">6</button>
+<button onClick={() => handleClick('+')} className="btn btn-secondary col-3">+</button>
+
+{/* Row 4 */}
+<button onClick={() => handleClick('1')} className="btn btn-light col-3">1</button>
+<button onClick={() => handleClick('2')} className="btn btn-light col-3">2</button>
+<button onClick={() => handleClick('3')} className="btn btn-light col-3">3</button>
+<button onClick={handleSquare} className="btn btn-secondary col-3">x²</button>
+
+{/* Row 5 */}
+<button onClick={() => handleClick('0')} className="btn btn-light col-6">0</button>
+<button onClick={() => handleClick('.')} className="btn btn-light col-3">.</button>
+<button onClick={calculate} className="btn btn-primary col-3">=</button>
+
 
           </div>
         </div>
