@@ -71,6 +71,7 @@ function App() {
             <button onClick={() => handleClick('0')} className="btn btn-light col-6">0</button>
             <button onClick={() => handleClick('.')} className="btn btn-light col-3">.</button>
             <button onClick={calculate} className="btn btn-primary col-3">=</button>
+
           </div>
         </div>
       </div>

@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .container {
   max-width: 400px;
   margin: 0 auto; /* Center the calculator on the page */
@@ -9,12 +5,17 @@
 
 button {
   margin: 5px;
-  height: 60px;  /* Ensure consistent height for buttons */
-  font-size: 1.5rem;  /* Increase font size for better readability */
+  height: 75px;  /* Increased height for a better fit */
+  width: 75px;   /* Set a consistent width for all buttons */
+  font-size: 1.5rem;  /* Larger font for readability */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the button content */
 }
 
 input.form-control {
   font-size: 2rem; /* Larger display text */
   text-align: right; /* Align text to the right for better UX */
   margin-bottom: 15px; /* Add space below the display */
+  height: 75px;  /* Adjust height to match buttons */
 }
