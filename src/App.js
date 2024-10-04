@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { evaluate, pow } from "mathjs"; // Import functions from math.js
 import "./App.css"; // Add your custom styles here
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
 
   const calculate = () => {
     try {
-      setDisplay(Function('"use strict";return (' + display + ')')().toString());
+      setDisplay(evaluate(display).toString()); // Use math.js evaluate
     } catch {
       setDisplay("Error");
     }
@@ -22,7 +23,7 @@ function App() {
 
   const handleSquare = () => {
     try {
-      setDisplay(Math.pow(eval(display), 2).toString());
+      setDisplay(pow(evaluate(display), 2).toString()); // Use math.js pow for square
     } catch {
       setDisplay("Error");
     }
