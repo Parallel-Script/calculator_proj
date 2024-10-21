@@ -20,8 +20,8 @@ pipeline {
         // Stage 3: Deploy the built app to an NGINX web server
         stage('Deploy to NGINX') {
             steps {
-                sshagent(['your-ssh-credential-id']) {  // Use your server's SSH credentials stored in Jenkins
-                    sh 'scp -r build/* user@server_ip:/var/www/react-app/'  // Securely copy the files to the server
+                sshagent(['ssh-agnet']) {  // Use your server's SSH credentials stored in Jenkins
+                    sh 'scp -r build/* ubuntu@52.201.234.143:/var/www/calculator_proj/'  // Securely copy the files to the server
                 }
             }
         }
