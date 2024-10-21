@@ -3,11 +3,6 @@ pipeline {
 
     stages {
         // Stage 1: Clone the repository from GitHub using SSH URL
-        stage('Clone Repository') {
-            steps {
-                git 'git@github.com:Parallel-Script/calculator_proj.git'  // Using SSH URL
-            }
-        }
 
         // Stage 2: Build the React application
         stage('Build React App') {
