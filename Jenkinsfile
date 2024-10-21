@@ -5,7 +5,7 @@ pipeline {
         // Stage 1: Clone the repository from GitHub
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/username/repository-name.git'
+                git 'https://github.com/Parallel-Script/calculator_proj.git'
             }
         }
 
